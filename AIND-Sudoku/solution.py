@@ -68,7 +68,6 @@ def grid_values(grid):
             Keys: The boxes, e.g., 'A1'
             Values: The value in each box, e.g., '8'. If the box has no value, then the value will be '123456789'.
     """
-    
     # Return a dictionary with both list zipped
     return  dict(zip(list(boxes),['123456789' if c ==  '.' else c for c in list(grid)])) 
 
